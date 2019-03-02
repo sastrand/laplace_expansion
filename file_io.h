@@ -13,6 +13,7 @@ int matrix_size(char* fpath) {
 // Create N x N matrix of values from 0 to m
 //
 int** random_mat(int n, int m) {
+  // set default m = 8192
   printf("starting random mat init\n");
   int** ret = (int**) malloc(n * sizeof(int*));
   for (int i=0; i<n; i++) {
